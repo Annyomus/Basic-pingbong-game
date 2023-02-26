@@ -29,12 +29,7 @@ public class Player extends Rectangle {
         if (key_pressed == 's') {
             this.y = y + 10;
         }
-/*        if (key_pressed == 'd'){
-            this.x = x + 10;
-        }
-        if (key_pressed == 'a'){
-            this.x = x - 10;
-        }*/
+
 
     }
     public void KeyPressed2(KeyEvent e){
@@ -45,11 +40,7 @@ public class Player extends Rectangle {
         if (e.getKeyCode() == KeyEvent.VK_DOWN){
             this.y = y + 10;
         }
-/*        if (e.getKeyCode() == KeyEvent.VK_RIGHT){
-            this.x = x + 10;
-        }
-        if (e.getKeyCode() == KeyEvent.VK_LEFT){
-            this.x = x - 10;*/
+
         }
 }
 

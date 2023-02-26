@@ -35,7 +35,6 @@ public class ball extends Rectangle {
        else if (!up){
            x = x - ball_speed;
            y = y - fall_speed;
-           System.out.println(random.nextInt(3));
            }
        else {
            x = x - ball_speed;
