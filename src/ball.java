@@ -7,6 +7,7 @@ public class ball extends Rectangle {
     boolean right;
     boolean up;
     Random random;
+    int fall_speed;
     static int ball_speed = 3;
    public ball(int x, int y, int width, int height, Color color){
         this.x = x;
@@ -25,19 +26,20 @@ public class ball extends Rectangle {
     public void right(){
        if(right && up){
            x = x + ball_speed;
-           y++;
+           y = y + fall_speed;
        }
        else if(right && !up) {
            x = x + ball_speed;
-           y--;
+           y = y - fall_speed;
        }
        else if (!up){
            x = x - ball_speed;
-           y--;
+           y = y - fall_speed;
+           System.out.println(random.nextInt(3));
            }
        else {
            x = x - ball_speed;
-           y++;
+           y = y + fall_speed;
        }
     }
 

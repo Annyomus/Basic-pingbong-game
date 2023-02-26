@@ -78,13 +78,19 @@ public class game_panel extends JPanel implements KeyListener {
         }
         // Player Collision
         if (player.intersects(ball) || player2.intersects(ball)){
-            System.out.println("Nice");
             boolean random_up_down = random.nextBoolean();
 
             System.out.println(random_up_down);
 
-            if(ball.right){ ball.right = false; ball.up = random_up_down;}
-            else{ ball.right = true; ball.up = random_up_down;}
+            if(ball.right){
+                ball.right = false;
+                ball.up = random_up_down;
+                ball.fall_speed = random.nextInt(1, 4);
+            }
+            else{ ball.right = true; ball.up = random_up_down;
+                ball.fall_speed = random.nextInt(1, 4);
+
+            }
         }
 
     }
