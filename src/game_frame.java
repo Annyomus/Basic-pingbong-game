@@ -46,6 +46,6 @@ public class game_frame extends JFrame implements KeyListener{
 
     @Override
     public void keyReleased(KeyEvent e) {
-
+        panel.keyReleased(e);
     }
 }
