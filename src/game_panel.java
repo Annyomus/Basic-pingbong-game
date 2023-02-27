@@ -104,10 +104,10 @@ public class game_panel extends JPanel implements KeyListener {
             if(ball.right){
                 ball.right = false;
                 ball.up = random_up_down;
-                ball.fall_speed = random.nextInt(1, 4);
+                ball.fall_speed = random.nextInt(3, 6);
             }
             else{ ball.right = true; ball.up = random_up_down;
-                ball.fall_speed = random.nextInt(1, 4);
+                ball.fall_speed = random.nextInt(3, 6);
 
             }
         }

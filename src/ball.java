@@ -8,7 +8,7 @@ public class ball extends Rectangle {
     boolean up;
     Random random;
     int fall_speed;
-    static int ball_speed = 3;
+    static int ball_speed = 4;
    public ball(int x, int y, int width, int height, Color color){
         this.x = x;
         this.y = y;
